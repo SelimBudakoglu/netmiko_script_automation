@@ -3,8 +3,11 @@
 import getpass
 import netmiko
 import csv
+import logging
 from netmiko import ConnectHandler
 
+logging.basicConfig(filename='test.log', level=logging.DEBUG)
+logger = logging.getLogger("netmiko")
 
 print('\n''Script initiated')
 #Get credentials
