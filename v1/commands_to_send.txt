@@ -3,23 +3,12 @@ username teste2
 int et0/0
 description CONEXAO LAB
 exit
-int t0
-ip add 1.1.1.1 255.255.255.255
-no shut
-exit
-int lo99
-ip add 9.9.9.9 255.255.255.255
-exit
 router eigrp 100
 network 10.123.45.0 0.0.0.255
 end
 show run | in username
-sh run interface f0/1 | in description
-sh int t0
-sh run int l99
+sh version
+sh int et0/0
 sh run | se router eigrp
 sh ip protocols
-
-
-
 
