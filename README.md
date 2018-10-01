@@ -16,7 +16,7 @@ Limitations:
 
 How to use:
 1) Inform port (22/23) and IP address of devices in devices_to_configure.csv file
-2) Put the configuration that you want to send to devices in file commands_to_send.txt
+2) Put the configuration that you want to send to devices in file commands_to_send.txt (it starts in config mode)
 3) Run config_devices_from_file.py
 
 Use case:
